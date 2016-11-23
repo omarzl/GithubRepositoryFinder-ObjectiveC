@@ -7,8 +7,9 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeCell.h"
 
-@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
+@interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,HomeCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *wavesLeftConstraint;
 @property (nonatomic) CGFloat wavesImageWidth;
 @property (strong,nonatomic) NSMutableArray *repositories;
+@property (strong,nonatomic) NSString *searchTerm;
 
 @end
 
@@ -42,7 +44,9 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return [[UITableViewCell alloc] init];
+    HomeCell* cell=[tableView dequeueReusableCellWithIdentifier:@"HomeCell" forIndexPath:indexPath];
+    cell.delegate=self;
+    return cell;
 }
 
 #pragma mark - UITableViewDelegate
@@ -64,16 +68,33 @@
     }
 }
 
+#pragma mark - HomeCellDelegate
+
+-(void)didPressedButton:(UITableViewCell *)cell{
+    NSIndexPath *indexPath=[self.tableView indexPathForCell:cell];
+    if (indexPath!=nil) {
+        NSURL *url=[NSURL URLWithString:@""];
+        if (url!=nil) {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@""]];
+        }
+    }
+}
+
 #pragma mark - UISearchBarDelegate
 
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
-    
+    [self searchRepositoriesForString:searchText];
 }
 
 #pragma mark - Search logic
 
 -(void)searchRepositoriesForString:(NSString *)name{
+    [self.repositories removeAllObjects];
+    if ([name  isEqual: @""]) {
+        [self.tableView reloadData];
+    }else{
     
+    }
 }
 
 @end

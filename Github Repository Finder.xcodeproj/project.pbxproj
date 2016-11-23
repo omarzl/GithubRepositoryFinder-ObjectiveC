@@ -13,6 +13,7 @@
 		A19BAF6D1DE54B600077A91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19BAF6B1DE54B600077A91D /* Main.storyboard */; };
 		A19BAF6F1DE54B600077A91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19BAF6E1DE54B600077A91D /* Assets.xcassets */; };
 		A19BAF721DE54B600077A91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19BAF701DE54B600077A91D /* LaunchScreen.storyboard */; };
+		A1C026D11DE5551C00BF8A75 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C026D01DE5551C00BF8A75 /* HomeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A19BAF6E1DE54B600077A91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19BAF711DE54B600077A91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19BAF731DE54B600077A91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C026CF1DE5551C00BF8A75 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = Controller/Home/Cell/HomeCell.h; sourceTree = "<group>"; };
+		A1C026D01DE5551C00BF8A75 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = Controller/Home/Cell/HomeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				A1C026C81DE5549C00BF8A75 /* Delegate */,
-				A1C026CB1DE554AC00BF8A75 /* Controlador */,
-				A1C026CA1DE554A900BF8A75 /* Vista */,
-				A1C026C91DE554A300BF8A75 /* Modelo */,
+				A1C026CB1DE554AC00BF8A75 /* Controller */,
+				A1C026CA1DE554A900BF8A75 /* View */,
+				A1C026C91DE554A300BF8A75 /* Model */,
 				A1C026CD1DE554C900BF8A75 /* Assets */,
 				A19BAF621DE54B600077A91D /* Supporting Files */,
 			);
@@ -87,32 +90,33 @@
 			name = Delegate;
 			sourceTree = "<group>";
 		};
-		A1C026C91DE554A300BF8A75 /* Modelo */ = {
+		A1C026C91DE554A300BF8A75 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Modelo;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		A1C026CA1DE554A900BF8A75 /* Vista */ = {
+		A1C026CA1DE554A900BF8A75 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				A19BAF6B1DE54B600077A91D /* Main.storyboard */,
 			);
-			name = Vista;
+			name = View;
 			sourceTree = "<group>";
 		};
-		A1C026CB1DE554AC00BF8A75 /* Controlador */ = {
+		A1C026CB1DE554AC00BF8A75 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				A1C026CC1DE554B800BF8A75 /* Home */,
 			);
-			name = Controlador;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		A1C026CC1DE554B800BF8A75 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A1C026CE1DE554FD00BF8A75 /* Cell */,
 				A19BAF681DE54B600077A91D /* HomeViewController.h */,
 				A19BAF691DE54B600077A91D /* HomeViewController.m */,
 			);
@@ -125,6 +129,15 @@
 				A19BAF6E1DE54B600077A91D /* Assets.xcassets */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		A1C026CE1DE554FD00BF8A75 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026CF1DE5551C00BF8A75 /* HomeCell.h */,
+				A1C026D01DE5551C00BF8A75 /* HomeCell.m */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +212,7 @@
 			files = (
 				A19BAF6A1DE54B600077A91D /* HomeViewController.m in Sources */,
 				A19BAF671DE54B600077A91D /* AppDelegate.m in Sources */,
+				A1C026D11DE5551C00BF8A75 /* HomeCell.m in Sources */,
 				A19BAF641DE54B600077A91D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

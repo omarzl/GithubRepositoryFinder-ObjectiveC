@@ -33,7 +33,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AEx-KQ-mUG">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="132" id="VdJ-HC-SMO">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeCell" rowHeight="132" id="VdJ-HC-SMO" customClass="HomeCell">
                                         <rect key="frame" x="0.0" y="28" width="320" height="132"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VdJ-HC-SMO" id="u9c-QS-5U5">
@@ -67,6 +67,9 @@
                                                     <state key="normal" title="Button">
                                                         <color key="titleColor" red="0.12549019607843137" green="0.74117647058823533" blue="0.61568627450980395" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="didPressedButton:" destination="VdJ-HC-SMO" eventType="touchUpInside" id="8c8-XW-SsY"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -87,6 +90,13 @@
                                                 <constraint firstItem="49K-je-FJJ" firstAttribute="top" secondItem="dtq-1f-En8" secondAttribute="bottom" constant="10" id="wlz-9P-Kn0"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="dtq-1f-En8" id="dm0-r2-ZpF"/>
+                                            <outlet property="titleLabel" destination="Jbf-Uc-Guz" id="awL-HT-n6A"/>
+                                            <outlet property="urlButton" destination="49K-je-FJJ" id="ejy-tc-oz9"/>
+                                            <outlet property="userImageView" destination="QWv-en-zGb" id="LKb-j7-bAx"/>
+                                            <outlet property="usernameLabel" destination="lxp-zO-nCF" id="pbB-Sj-NbZ"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
