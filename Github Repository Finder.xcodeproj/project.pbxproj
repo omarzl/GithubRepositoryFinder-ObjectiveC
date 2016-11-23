@@ -7,25 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		998BCA224C5B78E9D47F008C /* libPods-Github Repository Finder.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECB18F2AEE78103988E7F85B /* libPods-Github Repository Finder.a */; };
 		A19BAF641DE54B600077A91D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BAF631DE54B600077A91D /* main.m */; };
 		A19BAF671DE54B600077A91D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BAF661DE54B600077A91D /* AppDelegate.m */; };
-		A19BAF6A1DE54B600077A91D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BAF691DE54B600077A91D /* ViewController.m */; };
+		A19BAF6A1DE54B600077A91D /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A19BAF691DE54B600077A91D /* HomeViewController.m */; };
 		A19BAF6D1DE54B600077A91D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19BAF6B1DE54B600077A91D /* Main.storyboard */; };
 		A19BAF6F1DE54B600077A91D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19BAF6E1DE54B600077A91D /* Assets.xcassets */; };
 		A19BAF721DE54B600077A91D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19BAF701DE54B600077A91D /* LaunchScreen.storyboard */; };
+		A1C026D11DE5551C00BF8A75 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C026D01DE5551C00BF8A75 /* HomeCell.m */; };
+		A1C026D81DE55AF800BF8A75 /* Repository.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C026D71DE55AF800BF8A75 /* Repository.m */; };
+		A1C026DD1DE55B6100BF8A75 /* Owner.m in Sources */ = {isa = PBXBuildFile; fileRef = A1C026DC1DE55B6100BF8A75 /* Owner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FB6585FDD02DE622D2C42A5 /* Pods-Github Repository Finder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github Repository Finder.release.xcconfig"; path = "Pods/Target Support Files/Pods-Github Repository Finder/Pods-Github Repository Finder.release.xcconfig"; sourceTree = "<group>"; };
 		A19BAF5F1DE54B600077A91D /* Github Repository Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Repository Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19BAF631DE54B600077A91D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A19BAF651DE54B600077A91D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A19BAF661DE54B600077A91D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A19BAF681DE54B600077A91D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A19BAF691DE54B600077A91D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A19BAF681DE54B600077A91D /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A19BAF691DE54B600077A91D /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		A19BAF6C1DE54B600077A91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A19BAF6E1DE54B600077A91D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19BAF711DE54B600077A91D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19BAF731DE54B600077A91D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1C026CF1DE5551C00BF8A75 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeCell.h; path = Controller/Home/Cell/HomeCell.h; sourceTree = "<group>"; };
+		A1C026D01DE5551C00BF8A75 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeCell.m; path = Controller/Home/Cell/HomeCell.m; sourceTree = "<group>"; };
+		A1C026D31DE5595100BF8A75 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Utils/Constants.h; sourceTree = "<group>"; };
+		A1C026D61DE55AF800BF8A75 /* Repository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Repository.h; path = Model/Repository.h; sourceTree = "<group>"; };
+		A1C026D71DE55AF800BF8A75 /* Repository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Repository.m; path = Model/Repository.m; sourceTree = "<group>"; };
+		A1C026DB1DE55B6100BF8A75 /* Owner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Owner.h; path = Model/Owner.h; sourceTree = "<group>"; };
+		A1C026DC1DE55B6100BF8A75 /* Owner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Owner.m; path = Model/Owner.m; sourceTree = "<group>"; };
+		D2B2F4F96E558621AB71222C /* Pods-Github Repository Finder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Github Repository Finder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Github Repository Finder/Pods-Github Repository Finder.debug.xcconfig"; sourceTree = "<group>"; };
+		ECB18F2AEE78103988E7F85B /* libPods-Github Repository Finder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Github Repository Finder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				998BCA224C5B78E9D47F008C /* libPods-Github Repository Finder.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C2A97A0225854C9D62D3219 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2B2F4F96E558621AB71222C /* Pods-Github Repository Finder.debug.xcconfig */,
+				2FB6585FDD02DE622D2C42A5 /* Pods-Github Repository Finder.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A19BAF561DE54B600077A91D = {
 			isa = PBXGroup;
 			children = (
 				A19BAF611DE54B600077A91D /* Github Repository Finder */,
 				A19BAF601DE54B600077A91D /* Products */,
+				7C2A97A0225854C9D62D3219 /* Pods */,
+				FE9DEED9A6BB968AB69AF0E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,14 +84,12 @@
 		A19BAF611DE54B600077A91D /* Github Repository Finder */ = {
 			isa = PBXGroup;
 			children = (
-				A19BAF651DE54B600077A91D /* AppDelegate.h */,
-				A19BAF661DE54B600077A91D /* AppDelegate.m */,
-				A19BAF681DE54B600077A91D /* ViewController.h */,
-				A19BAF691DE54B600077A91D /* ViewController.m */,
-				A19BAF6B1DE54B600077A91D /* Main.storyboard */,
-				A19BAF6E1DE54B600077A91D /* Assets.xcassets */,
-				A19BAF701DE54B600077A91D /* LaunchScreen.storyboard */,
-				A19BAF731DE54B600077A91D /* Info.plist */,
+				A1C026D21DE5594100BF8A75 /* Utils */,
+				A1C026C81DE5549C00BF8A75 /* Delegate */,
+				A1C026CB1DE554AC00BF8A75 /* Controller */,
+				A1C026CA1DE554A900BF8A75 /* View */,
+				A1C026C91DE554A300BF8A75 /* Model */,
+				A1C026CD1DE554C900BF8A75 /* Assets */,
 				A19BAF621DE54B600077A91D /* Supporting Files */,
 			);
 			path = "Github Repository Finder";
@@ -74,9 +98,106 @@
 		A19BAF621DE54B600077A91D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A19BAF701DE54B600077A91D /* LaunchScreen.storyboard */,
+				A19BAF731DE54B600077A91D /* Info.plist */,
 				A19BAF631DE54B600077A91D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1C026C81DE5549C00BF8A75 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				A19BAF651DE54B600077A91D /* AppDelegate.h */,
+				A19BAF661DE54B600077A91D /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		A1C026C91DE554A300BF8A75 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026DA1DE55B5A00BF8A75 /* Owner */,
+				A1C026D91DE55B4C00BF8A75 /* Repository */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A1C026CA1DE554A900BF8A75 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A19BAF6B1DE54B600077A91D /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A1C026CB1DE554AC00BF8A75 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026CC1DE554B800BF8A75 /* Home */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A1C026CC1DE554B800BF8A75 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026CE1DE554FD00BF8A75 /* Cell */,
+				A19BAF681DE54B600077A91D /* HomeViewController.h */,
+				A19BAF691DE54B600077A91D /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		A1C026CD1DE554C900BF8A75 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A19BAF6E1DE54B600077A91D /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		A1C026CE1DE554FD00BF8A75 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026CF1DE5551C00BF8A75 /* HomeCell.h */,
+				A1C026D01DE5551C00BF8A75 /* HomeCell.m */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		A1C026D21DE5594100BF8A75 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026D31DE5595100BF8A75 /* Constants.h */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A1C026D91DE55B4C00BF8A75 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026D61DE55AF800BF8A75 /* Repository.h */,
+				A1C026D71DE55AF800BF8A75 /* Repository.m */,
+			);
+			name = Repository;
+			sourceTree = "<group>";
+		};
+		A1C026DA1DE55B5A00BF8A75 /* Owner */ = {
+			isa = PBXGroup;
+			children = (
+				A1C026DB1DE55B6100BF8A75 /* Owner.h */,
+				A1C026DC1DE55B6100BF8A75 /* Owner.m */,
+			);
+			name = Owner;
+			sourceTree = "<group>";
+		};
+		FE9DEED9A6BB968AB69AF0E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECB18F2AEE78103988E7F85B /* libPods-Github Repository Finder.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19BAF761DE54B600077A91D /* Build configuration list for PBXNativeTarget "Github Repository Finder" */;
 			buildPhases = (
+				6F6663682A9ECEB5B894833F /* [CP] Check Pods Manifest.lock */,
 				A19BAF5B1DE54B600077A91D /* Sources */,
 				A19BAF5C1DE54B600077A91D /* Frameworks */,
 				A19BAF5D1DE54B600077A91D /* Resources */,
+				29BCE501E52BD933DB8181D1 /* [CP] Embed Pods Frameworks */,
+				FA7C4BAEA4EBAB3453AB2804 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,13 +268,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29BCE501E52BD933DB8181D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Github Repository Finder/Pods-Github Repository Finder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6663682A9ECEB5B894833F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA7C4BAEA4EBAB3453AB2804 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Github Repository Finder/Pods-Github Repository Finder-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A19BAF5B1DE54B600077A91D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A19BAF6A1DE54B600077A91D /* ViewController.m in Sources */,
+				A19BAF6A1DE54B600077A91D /* HomeViewController.m in Sources */,
+				A1C026D81DE55AF800BF8A75 /* Repository.m in Sources */,
 				A19BAF671DE54B600077A91D /* AppDelegate.m in Sources */,
+				A1C026DD1DE55B6100BF8A75 /* Owner.m in Sources */,
+				A1C026D11DE5551C00BF8A75 /* HomeCell.m in Sources */,
 				A19BAF641DE54B600077A91D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +436,7 @@
 		};
 		A19BAF771DE54B600077A91D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2B2F4F96E558621AB71222C /* Pods-Github Repository Finder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Github Repository Finder/Info.plist";
@@ -272,6 +448,7 @@
 		};
 		A19BAF781DE54B600077A91D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FB6585FDD02DE622D2C42A5 /* Pods-Github Repository Finder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Github Repository Finder/Info.plist";
@@ -300,6 +477,7 @@
 				A19BAF781DE54B600077A91D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
