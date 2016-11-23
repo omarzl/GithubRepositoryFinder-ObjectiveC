@@ -16,6 +16,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.userImageView.layer.cornerRadius=25;
+    self.userImageView.clipsToBounds=true;
 }
 
 - (IBAction)didPressedButton:(UIButton *)sender {
